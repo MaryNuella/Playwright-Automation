@@ -14,7 +14,8 @@ export function createGmailClient() {
     refresh_token: process.env.GMAIL_REFRESH_TOKEN,
   });
 
-  console.log("✅ Gmail OAuth client created successfully");
+  console.log("Gmail OAuth client created successfully");
 
   return google.gmail({ version: "v1", auth: oAuth2Client });
+
 }
